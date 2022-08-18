@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c7c7c7' fill-opacity='0.27'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0;
+    max-height: 4rem;
+}
+
+.header .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header .group-nav {
+    display: flex;
+}
+
+.header .subtext {
+    margin-top: 0.3rem;
+    flex-direction: row;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.header .subtext:hover {
+    border-bottom: 1px solid #000;
+}
+
+.add, #remove, #add-admin {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    display: none;
+}
+
+.add *, #remove *, #add-admin * {
+    box-sizing: border-box;
+}
+
+.add h2, #remove h2, #add-admin h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add input, #remove input, #add-admin input {
+    margin-bottom: 15px;
+}
+
+.add input[type=email], #remove input[type=email], #add-admin input[type=email]{
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.add label, #remove label, #add-admin label {
+    color: #777;
+    font-size: 0.8em;
+}
+
+.add button[type=button], #remove button[type=button], #add-admin button[type=button] {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    background: #207cca;
+    background: linear-gradient(to right, #207cca 0%, #9f58a3 100%);
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+.input-area input[type="text"] {
+    padding: 0.6rem 0.4rem;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.input-area button {
+    outline: none;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 0.4rem;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #e6e6e6;
+}
+
+.input-area .fa-paper-plane {
+    color: #00c3ff;
+}
+
+.chat-box {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 0.3rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+.message .timestamp {
+    color: #646464;
+    font-size: 0.6rem;
+}
+
+.message.primary {
+    text-align: right;
+    background-color: #d8d8d8;
+    margin-left: auto;
+}
+
+.message.secondary {
+    text-align: left;
+    background-color: #98fb98;
+    margin-right: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .contact-info .avatar {
+        width: 35px;
+        height: 35px;
+    }
+}
